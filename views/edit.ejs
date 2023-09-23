@@ -1,0 +1,12 @@
+<%-include("includes/head.ejs")%>
+
+<body>
+    <h1>Edit Quote</h1>
+    <form action="/quotes/<%=card.id%>?_method=PATCH" method="post">
+        <textarea class="text" name="quote" cols="30" rows="10" placeholder="write your quote..."><%=card.quote%></textarea>
+        <div>
+            <button class="btn">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

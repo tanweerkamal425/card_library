@@ -1,0 +1,20 @@
+<%-include("includes/head.ejs")%>
+<body>
+    <h1>Add new quote</h1>
+    <form action="/quotes" method="post" enctype="multipart/form-data">
+        <label for="image">Insert image</label>
+        <br>
+        <br>
+        <input class="text" type="file" id="image" name="image" accept="image/*">
+        <br>
+        <br>
+        <input class="text" type="text" name="name"  placeholder="enter name">
+        <br>
+        <br>
+        <textarea class="text" name="quote" cols="30" rows="10" placeholder="write your quote"></textarea>
+        <br>
+        <br>
+        <button class="btn">Submit</button>
+    </form>
+</body>
+</html>

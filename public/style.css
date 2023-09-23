@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #330C2F;
+}
+
+h3 {
+    color: #7B287D;
+}
+
+.cards {
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 200px;
+}
+
+.wrapper {
+    width: 100%;
+    border: 2px solid #6290C8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper img {
+    width: 150px;
+    height: 150px;
+}
+
+.det-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name {
+    font-family: 'Dancing Script', cursive;
+}
+
+.quote {
+    font-family: 'Rancho', cursive;
+    font-size: 24px;
+}
+
+.btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    color: white;
+    border: 1px solid #6290C8;
+    background-color: #6290C8;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    outline: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.1 ease-in;
+    padding: 4px 8px;
+}
+
+.btn:hover {
+    transition: all 0.1 ease-in;
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px rgc(0, 0, 0, 0.4);
+}
+
+.new-card {
+    width: 200px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #6290C8;
+    padding: 8px 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-card a {
+    text-decoration: none;
+    color: black;
+}
+
+/* home page */
+.home-header {
+    color: #330C2F;
+}
+
+.home-container {
+    background-color: #A9BCD0;
+    width: 400px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.4);
+}

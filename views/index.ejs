@@ -1,0 +1,32 @@
+<%-include("includes/head.ejs")%>
+<body>
+    <h1>Quotes Card Library</h1>
+    <hr>
+    <div class="new-card">
+        <a href="http://localhost:8888/quotes/new">Create new card</a>
+    </div>
+    <div class="cards">
+        <%for (card of result) {%>
+            <div class="container">
+                <div class="wrapper">
+                    <img src="<%=card.image%>" alt="image">
+                    <p class="name">
+                        <%=card.name%>
+                    </p>
+                    <p class="quote"><span>Quote:</span>
+                        <%=card.quote%>
+                    </p>
+                    <div class="btn-wrapper">
+                        <form action="/quotes/<%=card.id%>/edit" method="get">
+                            <button class="btn">Edit</button>
+                        </form>
+                        <form action="/quotes/<%=card.id%>?_method=DELETE" method="post">
+                            <button class="btn">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <%}%>
+    </div>
+</body>
+</html>
